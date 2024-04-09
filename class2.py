@@ -9,6 +9,7 @@ from tkinter import ttk
 import threading
 import csv
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import pandas as pd
 
 def dict_to_csv(dict, filename):
     with open(filename, 'w', newline='') as csvfile:
@@ -44,7 +45,7 @@ def count_files():
 
     file_types, counts = zip(*most_common_types)
 
-    fig = plt.Figure(figsize=(6, 6), dpi=100)
+    fig = plt.Figure(figsize=(8, 8), dpi=100)
     ax = fig.add_subplot(111)
     ax.bar(file_types, counts)
     ax.set_xlabel('File Type')
