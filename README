@@ -1,33 +1,10 @@
-# File Type Counter
+# Netflix Data Analysis
 
-This is a simple Python application that counts the file types in all root directories and displays the 10 most common types in a bar plot. You can also download the counts as a CSV file.
+This Python script analyzes a dataset of Netflix titles. It provides insights into the distribution of movies by country and the most common cast members.
 
 ## How to Use
 
-1. Run the application. A window will open with a text box explaining how to use the application, a "Start counting" button, and a "Download CSV" button.
+1. Ensure that you have the required Python libraries installed. You can install them using pip:
 
-2. Click the "Start counting" button. The application will start counting the file types in all root directories. This process can take some time, depending on the number and size of your files. During this process, the "Start counting" button will be disabled to prevent multiple counts from running at the same time.
-
-3. After the counting process is finished, a bar plot showing the 10 most common file types will be displayed in the window.
-
-4. Click the "Download CSV" button to download the counts as a CSV file. The file will be named "file_types.csv" and will be saved in the same directory as the application.
-
-## Notes
-
-- Do not press the "Start counting" button multiple times, as this will freeze the application.
-- Wait for the bar plot to be displayed before clicking the "Download CSV" button.
-
-## Requirements
-
-This application requires Python 3 and the following Python libraries:
-
-- numpy
-- os
-- pprint
-- psutil
-- matplotlib
-- collections
-- tkinter
-- threading
-- csv
-- matplotlib.backends.backend_tkagg
+```bash
+pip install numpy pandas matplotlib
